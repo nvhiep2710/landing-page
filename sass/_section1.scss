@@ -1,0 +1,61 @@
+.how-we-work {
+  background-color: var(--grey100);
+
+  > .inner {
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    padding: var(--spacingSection) 20px;
+    gap: 50px 0;
+
+    .left {
+      max-width: 405px;
+
+      .heading {
+        color: var(--bgDarkBlue);
+        margin-bottom: 16px;
+      }
+
+      .description {
+        color: var(--gray400);
+        font-weight: 400;
+        padding-bottom: 16px;
+      }
+
+      .get-us {
+        color: var(--royalBlue);
+      }
+    }
+
+    .right {
+      max-width: 656px;
+      display: grid;
+      grid: auto-flow min-content / 1fr;
+      gap: 48px 25px;
+
+      @media screen and (min-width: 768px) {
+        grid: auto-flow min-content / 1fr 1fr;
+      }
+
+      .work {
+        &-image {
+          padding-bottom: 16px;
+        }
+
+        &-heading {
+          padding-bottom: 8px;
+        }
+
+        &-desc {
+          color: var(--bgDarkBlue);
+        }
+      }
+    }
+
+    @media screen and (min-width: 768px) {
+      max-width: 1183px;
+      flex-direction: row;
+    }
+  }
+}

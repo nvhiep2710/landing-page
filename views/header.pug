@@ -1,0 +1,31 @@
+header.header
+  .navigation.wrapper
+    img.logo(srcset="./images/logo.png", alt="")
+    ul.menu
+      li.menu-item 
+        a.menu-link.active(href="#") Home
+      li.menu-item 
+        a.menu-link(href="#") About us
+      li.menu-item 
+        a.menu-link(href="#") Features
+      li.menu-item 
+        a.menu-link(href="#") Pricing
+      li.menu-item 
+        a.menu-link(href="#") FAQ
+      li.menu-item 
+        a.menu-link(href="#") Blog
+    .menu-mobile
+      ion-icon(name='menu-outline')
+    .contact 
+      a.btn.btn--border(href="#") Contact
+  .banner.wrapper
+    .banner-content 
+      h1.heading(data-aos="fade-up", data-aos-duration="800") Building stellar websites for early startups
+      p.caption-desc.description(data-aos="fade-up", data-aos-duration="800") Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.
+      .actions(data-aos="flip-down", data-aos-duration="800")
+        a.btn.btn--primary(href="#") View our work
+        span.view-pricing
+          | View pricing
+          ion-icon(name='arrow-forward-outline')
+    .banner-image(data-aos="fade-left", data-aos-duration="800")
+      img(srcset="./images/banner-1.png", alt="")

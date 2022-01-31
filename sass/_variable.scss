@@ -1,0 +1,37 @@
+:root {
+  /*===[ Colors ]===*/
+  --dark100: #1b1c2a;
+
+  --gray100: #bbbbcb;
+  --gray200: rgba(244, 246, 252, 0.2);
+  --gray300: #1b1c2b;
+  --gray400: #1b1c2b;
+  --gray500: #696974;
+
+  --grey100: #f4f6fc;
+  --grey200: #fafbfe;
+  --grey300: #676874;
+  --grey400: #ececf1;
+
+  --tinBlue: #1c1e53;
+
+  --royalBlue: #2405f2;
+  --royalBlue2: #5239fa;
+
+  --bgPrimary: #fcd980;
+  --bgPrimaryBlur: #fde4a6;
+
+  --bgDarkBlue: #282938;
+  --bgDarkBlueBlur: #535460;
+
+  /*===[ Layouts ]===*/
+  --spacingSection: 60px;
+
+  @media screen and (min-width: 768px) {
+    --spacingSection: 100px;
+  }
+
+  @media screen and (min-width: 1024px) {
+    --spacingSection: 128px;
+  }
+}

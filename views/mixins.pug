@@ -1,0 +1,59 @@
+mixin workCardItem(image, title, desc, msAos)
+  .work-item(data-aos="fade-up", data-aos-duration=msAos)
+    .work-image
+      img(srcset= image)
+    h5= title
+    p.work-desc.caption-desc= desc
+
+mixin projectCardItem1(image, title, desc)
+  .project-card-large
+    .image
+      img(srcset= image)
+    .mask 
+      .mask-content
+        h6= title
+        p.caption-desc= desc
+        a.caption-desc.link(href="#")
+          span View portfolio
+          ion-icon(name='arrow-forward-outline') 
+
+mixin projectCardItem2(image, title)
+  .project-card-small
+    .image
+      img(srcset= image)
+    .mask 
+      .mask-content
+        h6= title
+        a.caption-desc.link(href="#")
+          span View portfolio
+          ion-icon(name='arrow-forward-outline') 
+
+mixin featureCardItem(image, title, desc)
+  .feature-card(data-aos="fade-up", data-aos-duration="800")
+    .image
+      img(srcset= image)
+    h6= title
+    p.caption-desc= desc
+
+mixin accordionItem(stt, title)
+  .accordion(class={ 'accordion-item--active': stt === '01' })(data-aos="zoom-in-up", data-aos-duration="800")
+    .accordion-item
+      span.number= stt
+      h6= title
+      .icon
+        ion-icon(name='add-outline')
+    .accordion-detail
+      p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+
+mixin blogCardItem(image, date, title, desc)
+  .blog-card(data-aos="zoom-in-down", data-aos-duration="800", data-aos-anchor-placement="top-bottom")
+    img.blog-card-image(srcset= image)
+    .blog-card-content
+      .blog-card-top 
+        span= date
+        h6= title
+        p.caption-desc= desc
+      .blog-card-bottom 
+        a.read-more.caption-desc.link(href="#")
+          span Read More
+          ion-icon(name='arrow-forward-outline') 

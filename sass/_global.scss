@@ -1,0 +1,116 @@
+.wrapper {
+  max-width: 1260px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  line-height: 28px;
+  font-size: 14px;
+  color: var(--bgDarkBlue);
+
+  @media screen and (min-width: 768px) {
+    font-size: 16px;
+  }
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  outline: none;
+  border: 0;
+  padding: 14px 32px;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 24px;
+  border-radius: 41px;
+  min-width: 185px;
+  background-color: transparent;
+  cursor: pointer;
+  transition: all 0.2s linear;
+
+  @media screen and (min-width: 768px) {
+    font-size: 15px;
+    padding: 16px 32px;
+  }
+
+  @media screen and (min-width: 1024px) {
+    font-size: 16px;
+    padding: 16px 48px;
+  }
+
+  &--primary {
+    color: var(--dark100);
+    background-color: var(--bgPrimary);
+
+    &:hover {
+      color: var(--gray300);
+      background-color: var(--bgPrimaryBlur);
+    }
+  }
+
+  &--secondary {
+    background-color: var(--bgDarkBlue);
+
+    &:hover {
+      background-color: var(--bgDarkBlueBlur);
+    }
+  }
+
+  &--border {
+    color: #fff;
+    border: 2px solid var(--gray200);
+
+    &:hover {
+      background-color: var(--gray200);
+    }
+  }
+}
+
+.input {
+  display: block;
+  padding: 18px 32px;
+  border: 1.5px solid rgba(255, 255, 255, 0.05);
+  font-size: 16px;
+  font-weight: 400;
+  width: 100%;
+  color: #fff;
+  background-color: transparent;
+  border-radius: 8px;
+  transition: border-color 0.15s linear;
+
+  &:focus {
+    border-color: rgba(255, 255, 255, 0.2);
+  }
+
+  ::placeholder {
+    /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: var(--grey100);
+    opacity: 1; /* Firefox */
+  }
+
+  :-ms-input-placeholder {
+    /* Internet Explorer 10-11 */
+    color: var(--grey100);
+  }
+
+  ::-ms-input-placeholder {
+    /* Microsoft Edge */
+    color: var(--grey100);
+  }
+}
+
+.c1 {
+  grid-area: c1;
+}
+.c2 {
+  grid-area: c2;
+}
+.c3 {
+  grid-area: c3;
+}
+.c4 {
+  grid-area: c4;
+}

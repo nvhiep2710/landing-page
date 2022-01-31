@@ -1,0 +1,130 @@
+.footer {
+  &-top {
+    color: #fff;
+    background-color: var(--tinBlue);
+
+    .inner {
+      display: flex;
+      flex-direction: column;
+      gap: 60px 0;
+      padding-top: 96px;
+      padding-bottom: 20px;
+
+      @media screen and (min-width: 768px) {
+        flex-direction: row;
+        padding-bottom: unset;
+      }
+    }
+    .left,
+    .right {
+      width: 100%;
+
+      @media screen and (min-width: 768px) {
+        max-width: 400px;
+      }
+    }
+
+    .left {
+      margin-right: 80px;
+
+      @media screen and (min-width: 1024px) {
+        margin-right: 260px;
+      }
+      > .logo {
+        max-width: 166px;
+        margin-bottom: 22px;
+      }
+    }
+
+    .right {
+      display: flex;
+      flex-direction: column;
+
+      .social {
+        padding-top: 28px;
+        > * {
+          display: inline-block;
+          color: #fff;
+          width: 16px;
+          cursor: pointer;
+          margin-right: 27px;
+        }
+      }
+    }
+
+    .slogan {
+      opacity: 0.8;
+      line-height: 28px;
+    }
+
+    h2 {
+      padding-bottom: 14px;
+    }
+
+    .contact-container {
+      display: flex;
+      width: 100%;
+      padding: 18px 37px;
+      justify-content: space-around;
+      text-align: center;
+      color: var(--bgDarkBlue);
+      background-color: var(--bgPrimary);
+      gap: 30px;
+
+      @media screen and (min-width: 768px) {
+        max-width: 420px;
+        justify-content: unset;
+        text-align: left;
+      }
+
+      @media screen and (min-width: 1024px) {
+        max-width: 517px;
+      }
+
+      p {
+        font-size: 18px;
+        line-height: 32px;
+
+        padding-bottom: 6px;
+      }
+
+      a {
+        color: var(--bgDarkBlue);
+        font-weight: 400;
+      }
+    }
+  }
+
+  &-bottom {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px 0;
+    padding: 32px 20px;
+
+    @media screen and (min-width: 768px) {
+      flex-direction: row;
+    }
+
+    .menu {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0 32px;
+      margin-right: 48px;
+      flex-wrap: wrap;
+
+      list-style: none;
+
+      @media screen and (min-width: 768px) {
+        margin-left: auto;
+      }
+
+      &-link {
+        color: var(--bgDarkBlue);
+        font-weight: 500;
+        transition: all 0.2s linear;
+      }
+    }
+  }
+}

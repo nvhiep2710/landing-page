@@ -1,0 +1,43 @@
+block mixins 
+  include ./views/mixins
+
+doctype html
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(http-equiv="X-UA-Compatible", content="IE=edge")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    title Finsweet
+
+    link(rel='preconnect' href='https://fonts.googleapis.com')
+    link(rel='preconnect' href='https://fonts.gstatic.com' crossorigin='')
+    link(href='https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap' rel='stylesheet')
+
+    script(type='module' src='https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js')
+    script(nomodule='' src='https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js')
+
+    link(rel='stylesheet' type='text/css' href='https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css')
+
+    link(href='https://unpkg.com/aos@2.3.1/dist/aos.css' rel='stylesheet')
+
+
+
+    link(rel="stylesheet", href="./css/app.css")
+  body 
+    include ./views/header.pug
+    .main
+      include ./views/section1.pug
+      include ./views/section2.pug
+      include ./views/section3.pug
+      include ./views/section4.pug
+      include ./views/section5.pug
+      include ./views/section6.pug
+      include ./views/section7.pug
+    include ./views/footer.pug
+    script(src='https://unpkg.com/aos@2.3.1/dist/aos.js')
+    script(type='text/javascript' src='https://code.jquery.com/jquery-1.11.0.min.js')
+    script(type='text/javascript' src='https://code.jquery.com/jquery-migrate-1.2.1.min.js')
+    script(type='text/javascript' src='https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js')
+    script(type='text/javascript' src="./js/app.js") 
+
+

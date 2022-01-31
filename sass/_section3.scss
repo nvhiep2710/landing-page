@@ -1,0 +1,49 @@
+.features {
+  background-color: var(--grey100);
+
+  .inner {
+    padding: var(--spacingSection) 0;
+
+    .text-heading {
+      max-width: 603px;
+      margin: 0 auto;
+      text-align: center;
+      padding-bottom: 47px;
+
+      > h2 {
+        padding-top: 12px;
+      }
+    }
+
+    .features-list {
+      display: grid;
+      grid: auto-flow min-content / 1fr;
+      gap: 24px 32px;
+
+      @media screen and (min-width: 768px) {
+        grid: auto-flow min-content / 1fr 1fr;
+      }
+      @media screen and (min-width: 1024px) {
+        grid: auto-flow min-content / 1fr 1fr 1fr;
+      }
+    }
+  }
+}
+
+.feature-card {
+  background-color: #fff;
+  padding: 48px;
+
+  .image {
+    width: 32px;
+    height: 32px;
+    margin-bottom: 23px;
+  }
+  > h6 {
+    padding-bottom: 12px;
+  }
+
+  > p {
+    color: var(--gray500);
+  }
+}
